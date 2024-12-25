@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Decision Tree</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="background">
+            <div class="navbar">
+                <div class="logo">
+                    <a href="/" style="text-decoration: none; color: black;">TOURISM.com</a>
+                </div>
+                <div class="navbar-menu">
+                    <a href="/">HOME</a>
+                    <a href="#about-us">ABOUT US</a>
+                    <a href="#contact-us">CONTACT US</a>
+                    <a href="#package">PACKAGES</a>
+                    <a href="#gallery">GALLERY</a>
+                </div>
+                <button>BOOK NOW</button>
+                <!-- Mobile Menu Icon -->
+                <img src="assets/socialmedia/menu.png" alt="Menu" class="mobile-menu-icon">
+            </div>
+            <div class="header-content">
+                <p>Discover Story - Worthy Travel moments</p>
+                <button>Explore Now</button>
+            </div>
+        </div>
+        
+    </header>
+    
+    <section class="about-us" id="about-us">
+        <div class="about-container">
+            <div class="about-text">
+                <h2>About Us</h2>
+                <p>
+                    Welcome to our journey! We are a team of passionate individuals dedicated to making your travel experiences unforgettable. Our mission is to provide exceptional service, unique destinations, and a hassle-free booking process.
+                </p>
+                <p>
+                    Whether you're looking for adventure, relaxation, or cultural exploration, we've got you covered. Join us and discover the world like never before!
+                </p>
+                <button>Learn More</button>
+            </div>
+            <div class="about-image">
+                <img src="assets/socialmedia/ceo1.jpg" alt="About Us Image">
+            </div>
+        </div>
+    </section>
+
+    <div class="container">
+        <h1>Plan Your Perfect Trip</h1>
+        <form id="decision-form">
+            <label for="preference">Do you prefer the mountains or the beach?</label>
+            <select id="preference" required>
+                <option value="" disabled selected>Choose one</option>
+                <option value="Mountains">Mountains</option>
+                <option value="Beach">Beach</option>
+            </select>
+
+            <label for="activity">Are you looking for adventure or relaxation?</label>
+            <select id="activity" required>
+                <option value="" disabled selected>Choose one</option>
+                <option value="Adventure">Adventure</option>
+                <option value="Relaxation">Relaxation</option>
+            </select>
+
+            <label for="budget">What’s your budget?</label>
+            <select id="budget" required>
+                <option value="" disabled selected>Choose one</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+            </select>
+
+            <button type="submit">Get Recommendation</button>
+        </form>
+        <div id="output" class="output"></div>
+    </div>
+
+    <section class="recommendation-section">
+        <h2>Recommended Packages</h2>
+        <div class="package-cards">
+            <div class="card">
+                <img src="assets/socialmedia/bchpkg.jpg" alt="Beach Package">
+                <h3>Beach Paradise</h3>
+                <p>Relax by the seaside with our beach getaway package.</p>
+                <button>Select Package</button>
+            </div>
+            <div class="card">
+                <img src="assets/socialmedia/retreat.jpg" alt="Adventure Package">
+                <h3>Adventure Awaits</h3>
+                <p>Explore thrilling adventures with this action-packed package.</p>
+                <button>Select Package</button>
+            </div>
+            <div class="card">
+                <img src="assets/socialmedia/luxry.jpg" alt="Luxury Package">
+                <h3>Luxury Retreat</h3>
+                <p>Experience the ultimate luxury with our premium package.</p>
+                <button>Select Package</button>
+            </div>
+        </div>
+    </section>
+
+    <div class="package" id="package">
+        <h2>Packages</h2>
+        <div class="card-container" >
+            
+            <!-- Package 1 -->
+            <div class="card">
+                <h3>Basic Package</h3>
+                <p>Perfect for budget travelers looking for essential services.</p>
+                <ul>
+                    <li>3-Star Accommodations</li>
+                    <li>City Tours</li>
+                    <li>Breakfast Included</li>
+                </ul>
+                <div class="price">
+                    <h2>₹4999</h2>
+                    <span>/ per person</span>
+                </div>
+                <button>Book Now</button>
+            </div>
+
+            <!-- Package 2 -->
+            <div class="card">
+                <h3>Standard Package</h3>
+                <p>Ideal for travelers seeking comfort and convenience.</p>
+                <ul>
+                    <li>4-Star Accommodations</li>
+                    <li>Guided City Tours</li>
+                    <li>Daily Breakfast & Dinner</li>
+                    <li>Airport Transfers</li>
+                </ul>
+                <div class="price">
+                    <h2>₹7999</h2>
+                    <span>/ per person</span>
+                </div>
+                <button>Book Now</button>
+            </div>
+
+            <!-- Package 3 -->
+            <div class="card">
+                <h3>Premium Package</h3>
+                <p>The ultimate luxury experience for discerning travelers.</p>
+                <ul>
+                    <li>5-Star Accommodations</li>
+                    <li>Personalized Tours</li>
+                    <li>All-Inclusive Meals</li>
+                    <li>Private Transfers</li>
+                </ul>
+                <div class="price">
+                    <h2>₹12,999</h2>
+                    <span>/ per person</span>
+                </div>
+                <button>Book Now</button>
+            </div>
+            
+        </div>
+    </div>
+    
+    <section class="gallery-section" id="gallery">
+        <h2>Our Gallery</h2>
+        <div class="gallery-container">
+            <div class="gallery-item">
+                <img src="assets/socialmedia/adv-aqua.jpg" alt="Gallery Image 1">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/socialmedia/trrk2.jpg" alt="Gallery Image 2">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/socialmedia/trk1.jpg" alt="Gallery Image 3">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/socialmedia/bch1.jpg" alt="Gallery Image 4">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/socialmedia/bch2.jpg" alt="Gallery Image 5">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/socialmedia/bch3.jpg" alt="Gallery Image 6">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/socialmedia/hills1.jpg" alt="Gallery Image 7">
+            </div>
+            <div class="gallery-item">
+                <img src="assets/socialmedia/hills2.jpg" alt="Gallery Image 8">
+            </div>
+        </div>
+    </section>
+
+
+    <footer>
+        <div class="footer">
+            <div class="footer-logo">
+                 <p><a href="/" style="text-decoration: none; color: white;">TOURISM.com</a></p>
+                 <div class="footer-social-media">
+                    <img src="assets/socialmedia/facebook.png" alt="">
+                    <img src="assets/socialmedia/instagram.png" alt="">
+                    <img src="assets/socialmedia/twitter.png" alt="">
+                    <img src="assets/socialmedia/youtube.png" alt="">
+                 </div>
+            </div>
+            <div class="footer-content">
+            <div class="footer-quick-links">
+                <h2>QUICK LINKS</h2>
+                    
+
+                <div class="footer-quick-links-items">
+                    <a href="/">HOME</a>
+                    <img src="assets/socialmedia/share (1).png" alt="">
+                </div>
+                <div class="footer-quick-links-items">
+                    <a href="#about-us">ABOUT US</a>
+                    <img src="assets/socialmedia/share (1).png" alt="">
+                </div>
+                <div class="footer-quick-links-items">
+                    <a href="#contact-us">CONTACT US</a>
+                    <img src="assets/socialmedia/share (1).png" alt="">
+                </div>
+                <div class="footer-quick-links-items">
+                    <a href="/">PRIVACY POLICY</a>
+                    <img src="assets/socialmedia/share (1).png" alt="">
+                </div>
+              
+            </div>
+            <div class="footer-contact-info" id="contact-us">
+
+                <h2>CONTACT US</h2>
+                
+                    <div class="contact-info">
+                        <img src="assets/socialmedia/location.png" alt="">
+                        <p>yalankha, banglore-karnataka</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="assets/socialmedia/phone-call.png" alt="">
+                        <p>+91 8908521248</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="assets/socialmedia/whatsapp (1).png" alt="">
+                        <p>+91 6385217425</p>
+                    </div>
+                    <div class="contact-info">
+                        <img src="assets/socialmedia/email.png" alt="">
+                        <p>tourism@gmail.com</p>
+                    </div>
+            </div>
+            
+            <div class="footer-content-getintouch">
+                <h2>GET IN TOUCH</h2>
+                <p>Email:</p>
+                <input type="email" placeholder="Enter your email">
+                <p>Message:</p>
+                <textarea placeholder="Enter your message"></textarea>
+                <button>Subscribe</button>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+</html>

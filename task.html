@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Decision Tree</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(to bottom, #4facfe, #00f2fe);
+        }
+
+        .decision-tree {
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: 90%;
+            max-width: 400px;
+        }
+
+        .decision-tree h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+
+        .form-group select {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .output {
+            margin-top: 20px;
+            padding: 15px;
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            display: none;
+        }
+
+        .output h2 {
+            margin-top: 0;
+            color: #007bff;
+        }
+
+        .output p {
+            margin: 0;
+        }
+
+        @media (max-width: 600px) {
+            .decision-tree {
+                width: 100%;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="decision-tree">
+        <h1>Travel Decision Tree</h1>
+        <div class="form-group">
+            <label for="preference">Do you prefer the mountains or the beach?</label>
+            <select id="preference">
+                <option value="">Select...</option>
+                <option value="mountains">Mountains</option>
+                <option value="beach">Beach</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="activity">Are you looking for adventure or relaxation?</label>
+            <select id="activity">
+                <option value="">Select...</option>
+                <option value="adventure">Adventure</option>
+                <option value="relaxation">Relaxation</option>
+            </select>
+        </div>
+        <div class="form-group">
+            <label for="budget">What’s your budget?</label>
+            <select id="budget">
+                <option value="">Select...</option>
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high">High</option>
+            </select>
+        </div>
+        <button onclick="generateRecommendation()">Get Recommendation</button>
+        <div class="output" id="output">
+            <h2>Recommendation</h2>
+            <p id="recommendation"></p>
+        </div>
+    </div>
+
+    <script>
+        function generateRecommendation() {
+            const preference = document.getElementById('preference').value;
+            const activity = document.getElementById('activity').value;
+            const budget = document.getElementById('budget').value;
+
+            const outputDiv = document.getElementById('output');
+            const recommendationText = document.getElementById('recommendation');
+
+            if (!preference || !activity || !budget) {
+                alert('Please fill out all fields to get a recommendation!');
+                return;
+            }
+
+            let recommendation = "";
+
+            if (preference === 'beach' && activity === 'adventure' && budget === 'medium') {
+                recommendation = "Based on your preferences, we recommend a trip to the beautiful Bali, Indonesia! Enjoy the white sandy beaches while engaging in exciting water sports and activities. With a medium budget, you can explore the local culture, visit nearby temples, and enjoy both adventure and relaxation in one place.";
+            } else if (preference === 'mountains' && activity === 'relaxation' && budget === 'low') {
+                recommendation = "Consider a peaceful retreat in the Himalayan foothills. Enjoy serene views, quiet walks, and budget-friendly accommodations perfect for relaxation.";
+            } else {
+                recommendation = "We couldn’t find a specific match, but why not explore options based on your choices? Your preferences are unique!";
+            }
+
+            recommendationText.textContent = recommendation;
+            outputDiv.style.display = 'block';
+        }
+    </script>
+</body>
+</html>
