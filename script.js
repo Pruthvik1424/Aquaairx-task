@@ -1,12 +1,10 @@
 document.getElementById("decision-form").addEventListener("submit", function (event) {
     event.preventDefault();
 
-    // Get user inputs
     const preference = document.getElementById("preference").value;
     const activity = document.getElementById("activity").value;
     const budget = document.getElementById("budget").value;
 
-    // Story templates
     const destinations = {
         Beach: {
             Adventure: {
@@ -34,24 +32,30 @@ document.getElementById("decision-form").addEventListener("submit", function (ev
         }
     };
 
-    // Generate recommendation
     const recommendation = destinations[preference][activity][budget];
 
-    // Output result
     const outputDiv = document.getElementById("output");
     outputDiv.innerHTML = `<p>${recommendation}</p>`;
+
+
+    
 });
 
 
 
 
 
-// JavaScript to toggle the menu on clicking the menu icon
-document.addEventListener("DOMContentLoaded", () => {
-    const menuIcon = document.getElementById("menu-icon");
-    const navbarMenu = document.getElementById("navbar-menu");
+const menuIcon = document.getElementById("menu-icon");
+const mobileMenuCard = document.getElementById("mobile-menu-card");
+const closeMobileMenuCard = document.getElementById("close-mobile-menu-card");
 
-    menuIcon.addEventListener("click", () => {
-        navbarMenu.classList.toggle("active");
-    });
+menuIcon.addEventListener("click", () => {
+    mobileMenuCard.style.display = "block";
 });
+
+closeMobileMenuCard.addEventListener("click", () => {
+    mobileMenuCard.style.display = "none";
+});
+
+
+
