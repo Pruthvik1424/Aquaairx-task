@@ -90,3 +90,55 @@ Technologies Used
 2.CSS3: Styling and layout.
 3.Bootstrap 5: Responsive grid system and components.
 4.JavaScript: For handling form submissions and dynamic interactions.
+
+
+#Snapshots regarding this website 
+to see this images just copy the image url-link and paste in the browser
+
+![Screenshot 2024-12-25 191720](https://github.com/user-attachments/assets/e49204a1-0818-40da-b7ef-7f59193a9f3b)
+
+![Screenshot 2024-12-25 192006](https://github.com/user-attachments/assets/ce494682-fe97-456c-946c-4c2996ee7d43)
+
+![Screenshot 2024-12-25 192053](https://github.com/user-attachments/assets/7e52d802-8f3b-48f8-863e-814349bfc578)
+
+![Screenshot 2024-12-25 192134](https://github.com/user-attachments/assets/4c240699-fe23-478b-b3a3-14a94363b5c2)
+
+![Screenshot 2024-12-25 192215](https://github.com/user-attachments/assets/593daf3b-8179-4ab2-8fd9-0dcba138a9ac)
+
+![Screenshot 2024-12-25 192300](https://github.com/user-attachments/assets/f2abbf22-84c2-405c-8d37-7de2a82e2655)
+
+
+![Screenshot 2024-12-25 192358](https://github.com/user-attachments/assets/a82d2671-577e-4094-b27d-11c6ea8ff94a)
+
+MOBILE VIEW 
+
+![Screenshot 2024-12-25 192549](https://github.com/user-attachments/assets/92ca4266-9a6a-4b1c-ac6f-d47950b848a6)
+
+![Screenshot 2024-12-25 192643](https://github.com/user-attachments/assets/e6b4c8e1-0933-4dee-a842-ab4f42879beb)
+
+![Screenshot 2024-12-25 192744](https://github.com/user-attachments/assets/787312da-8522-431c-be4c-8b7e4e9c72f0)
+
+![Screenshot 2024-12-25 192820](https://github.com/user-attachments/assets/c4f18cf4-5aba-4c9f-9ca5-645760aebd7e)
+
+![Screenshot 2024-12-25 192856](https://github.com/user-attachments/assets/9eccec85-18cd-47f9-a0a6-3c856ef64271)
+
+![Screenshot 2024-12-25 192928](https://github.com/user-attachments/assets/750b6799-28c2-4a30-88f8-983aad38905b)
+
+![Screenshot 2024-12-25 193016](https://github.com/user-attachments/assets/853b2576-5662-4683-a1a9-1ff21a5de94e)
+
+![Screenshot 2024-12-25 193105](https://github.com/user-attachments/assets/1e3a6979-3e38-4de6-b05c-87be0e9917d2)
+
+
+
+THank you .............
+
+for any queries 
+email: pruthvik.kumaraswamy14@gmail.com
+
+
+
+
+
+
+
+
