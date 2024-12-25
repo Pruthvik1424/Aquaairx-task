@@ -45,17 +45,6 @@ document.getElementById("decision-form").addEventListener("submit", function (ev
 
 
 
-const menuIcon = document.getElementById("menu-icon");
-const mobileMenuCard = document.getElementById("mobile-menu-card");
-const closeMobileMenuCard = document.getElementById("close-mobile-menu-card");
-
-menuIcon.addEventListener("click", () => {
-    mobileMenuCard.style.display = "block";
-});
-
-closeMobileMenuCard.addEventListener("click", () => {
-    mobileMenuCard.style.display = "none";
-});
 
 
 

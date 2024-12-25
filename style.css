@@ -419,69 +419,6 @@ body {
  }
  
 
-
-
-.container{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    .container-content{
-        font-weight: 800;
-        font-size: 30px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        gap: 2px;
-        p{
-            margin: 0;
-            padding: 0;
-        }
-    }
-    .decision-tree-form{
-        .decision-tree{
-            display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              gap: 20px;
-
-            h2{
-                font-weight: 400;
-            }
-            .form-group{
-              display: flex;
-              flex-direction: column;
-              justify-content: space-between;
-              gap: 10px;
-              select{
-                height: 40px;
-                border: 1px solid gray ;
-                border-radius: 0px;
-                option{
-                    border: none;
-                    border-radius: 0px;
-
-                    background-color: bisque;
-                }
-                
-              }
-            }
-            button{
-                border: 1px solid black;
-                height: 40px;
-                font-size: 15px;
-                transition: background-color 0.3s, color 0.3s; 
-
-            }
-            button:hover{
-                background-color: black;
-                color: white; 
-              
-            }
-        }
-    }
-}
-
 .package{
     display: flex;
     flex-direction: column;
@@ -814,6 +751,10 @@ button:hover {
     text-align: center;
     display: flex;
     flex-direction: column;
+    h2{
+        font-weight: 600;
+        margin-bottom: 30px;
+    }
     label{
         /* align-items: flex-start;      */
         width: 100%;
